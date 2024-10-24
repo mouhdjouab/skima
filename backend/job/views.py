@@ -53,7 +53,7 @@ def getJob(request, pk):
 
     return Response({'job': serializer.data, 'candidates': candidates})
 
-
+# create job
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def newJob(request):
@@ -65,7 +65,7 @@ def newJob(request):
     serializer = JobSerializer(job, many=False)
     return Response(serializer.data)
 
-
+# update job
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def updateJob(request, pk):
@@ -92,7 +92,7 @@ def updateJob(request, pk):
 
     return Response(serializer.data)
 
-
+#delet job
 @api_view(['DELETE'])
 @permission_classes([IsAuthenticated])
 def deleteJob(request, pk):

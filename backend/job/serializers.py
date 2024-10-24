@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import CandidatesApplied, Job
-
+# ading serializer 
 class JobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Job

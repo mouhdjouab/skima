@@ -105,7 +105,7 @@ def deleteJob(request, pk):
 
     return Response({ 'message': 'Job is Deleted.' }, status=status.HTTP_200_OK)
 
-
+# implement statistics for specific topis
 @api_view(['GET'])
 def getTopicStats(request, topic):
 

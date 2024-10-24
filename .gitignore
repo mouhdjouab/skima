@@ -4,11 +4,11 @@ backend/backend/.env
 backend/static/
 frontend/next.config.js
 # Ignore __pycache__ in account
-backend/account/__pycache__/
+backend/account/**/_pycache_/
 
 # Ignore __pycache__ in job
-backend/job/__pycache__/
+backend/job/**/_pycache_/
 
-# Ignore __pycache__ in utils
-backend/utils/__pycache__/
-backend/backend/__pycache__/
+# Ignore _pycache_ in utils
+backend/utils/**/_pycache_/
+backend/backend/**/_pycache_/

@@ -16,6 +16,7 @@ from .filters import JobsFilter
 
 
 # Create your views here.
+# Create Jobs here.
 
 @api_view(['GET'])
 def getAllJobs(request):
@@ -113,7 +114,7 @@ def getTopicStats(request, topic):
     if len(jobs) == 0:
         return Response({ 'message': 'Not stats found for {topic}'.format(topic=topic) })
 
-    
+
     stats = jobs.aggregate(
         total_jobs = Count('title'),
         avg_positions = Avg('positions'),

@@ -15,7 +15,7 @@ from django.shortcuts import get_object_or_404
 from .filters import JobsFilter
 
 
-# Create your views here.
+# all views
 # Create Jobs here.
 
 @api_view(['GET'])

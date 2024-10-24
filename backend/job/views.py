@@ -25,7 +25,7 @@ def getAllJobs(request):
 
     count = filterset.qs.count()
 
-    # Pagination
+    # ADD Pagination TO JOB
     resPerPage = 3
 
     paginator = PageNumberPagination()

@@ -2,7 +2,7 @@ from dataclasses import field
 from django_filters import rest_framework as filters
 from .models import Job
 
-
+# ADDIN FILTRE
 class JobsFilter(filters.FilterSet):
 
     keyword = filters.CharFilter(field_name='title', lookup_expr='icontains')

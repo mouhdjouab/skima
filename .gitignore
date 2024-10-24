@@ -3,12 +3,4 @@ backend/db.sqlite3
 backend/backend/.env
 backend/static/
 frontend/next.config.js
-# Ignore __pycache__ in account
-backend/account/**/_pycache_/
-
-# Ignore __pycache__ in job
-backend/job/**/_pycache_/
-
-# Ignore _pycache_ in utils
-backend/utils/**/_pycache_/
-backend/backend/**/_pycache_/
+__pycache__/

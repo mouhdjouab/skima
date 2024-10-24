@@ -41,6 +41,7 @@ def getAllJobs(request):
         'jobs': serializer.data
         })
 
+# Create Jobs BY ID here.
 
 @api_view(['GET'])
 def getJob(request, pk):

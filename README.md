@@ -1,6 +1,6 @@
 # SkiMa - Job Matching Platform
 
-SkiMa is web api that connects job seekers with employers through a smart matching algorithm based on skills, experience, and preferences. The platform features geolocation mapping of job postings, and JWT-based authentication for user security.
+SkiMa is web api that connects job seekers with employers through a smart matching algorithm based on skills, experience, and preferences. The api features geolocation mapping of job postings, and JWT-based authentication for user security.
 
 ## Features
 - **Job Matching Algorithm**: Recommends jobs to seekers based on skills and experience.

@@ -134,7 +134,7 @@ def applyToJob(request, pk):
     user = request.user
     job = get_object_or_404(Job, id=pk)
 
-   
+
 
     if job.lastDate < timezone.now():
         return Response({ 'error': 'You can not apply to this job. Date is over' }, status=status.HTTP_400_BAD_REQUEST)
@@ -183,7 +183,7 @@ def isApplied(request, pk):
 
     return Response(applied)
 
-
+# CURRENT JOB
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getCurrentUserJobs(request):
@@ -195,7 +195,7 @@ def getCurrentUserJobs(request):
 
     return Response(serializer.data)
 
-
+# CANDIDATE BY JOB
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getCandidatesApplied(request, pk):

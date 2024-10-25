@@ -42,6 +42,7 @@ def register(request):
     else:
         return Response(user.errors)
 
+#  user status view
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])

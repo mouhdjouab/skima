@@ -134,8 +134,7 @@ def applyToJob(request, pk):
     user = request.user
     job = get_object_or_404(Job, id=pk)
 
-    if user.userprofile.resume == '':
-        return Response({ 'error': 'Please upload your resume first' }, status=status.HTTP_400_BAD_REQUEST)
+   
 
     if job.lastDate < timezone.now():
         return Response({ 'error': 'You can not apply to this job. Date is over' }, status=status.HTTP_400_BAD_REQUEST)

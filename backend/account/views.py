@@ -52,7 +52,7 @@ def currentUser(request):
 
     return Response(user.data)
 
-
+# ADD UPDTAE USER VIEW
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def updateUser(request):

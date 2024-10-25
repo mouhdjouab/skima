@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-
+#ADD ERROR HANDLER 
 def handler404(request, exception):
     message = ('Route not found')
     response = JsonResponse(data={ 'error': message })

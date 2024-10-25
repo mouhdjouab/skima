@@ -12,8 +12,7 @@ from rest_framework.permissions import IsAuthenticated
 
 from django.contrib.auth.models import User
 
-# Create your views here.
-
+# create register view
 @api_view(['POST'])
 def register(request):
     data = request.data
@@ -28,7 +27,7 @@ def register(request):
                username = data['email'],
                email = data['email'],
                password = make_password(data['password'])
-           ) 
+           )
 
            return Response({
                 'message': 'User registered.'},
@@ -58,7 +57,7 @@ def currentUser(request):
 def updateUser(request):
     user = request.user
 
-    data = request.data    
+    data = request.data
 
     user.first_name = data['first_name']
     user.last_name = data['last_name']
